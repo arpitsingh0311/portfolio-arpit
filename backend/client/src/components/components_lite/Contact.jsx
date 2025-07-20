@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import Resume from "/src/assets/Resume.pdf";
 
 const Contact = () => {
    const [formData, setFormData] = useState({
@@ -79,7 +80,7 @@ const Contact = () => {
               <FaLinkedin />
             </a>
             <a
-              href="/src/assets/Resume.pdf"
+              href={Resume}
               download
               className="hover:text-red-400 transition text-sm border px-3 py-1 rounded"
             >
